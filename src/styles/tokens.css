@@ -1,0 +1,69 @@
+/* ===== Design Tokens ===== */
+:root {
+  /* Brand */
+  --color-primary: #6DB970;
+  --color-primary-dark: #3F8F49;
+  --color-primary-light: #E8F5E9;
+  --color-primary-lightest: #F4FAF4;
+
+  /* Neutral */
+  --color-text-primary: #1C1C1E;
+  --color-text-secondary: #636366;
+  --color-text-tertiary: #8E8E93;
+  --color-bg-page: #F5F5F7;
+  --color-bg-card: #FFFFFF;
+  --color-border: #D1D1D6;
+  --color-overlay-dark: #222326;
+  --color-overlay-text: #F5F5F7;
+
+  /* Chat */
+  --color-chat-bg: #DCE5EE;
+  --color-bubble-other: #FFFFFF;
+  --color-bubble-user: #F7D86A;
+  --color-chat-quote: #EEF1F4;
+  --color-chat-meta: #6F7882;
+
+  /* Semantic */
+  --color-success: #34C759;
+  --color-warning: #FF9F0A;
+  --color-error: #FF3B30;
+  --color-info: #0A84FF;
+
+  /* Spacing (4px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 15px;
+  --font-size-md: 17px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 28px;
+  --line-height-normal: 1.5;
+  --line-height-chat: 1.55;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-nav: 0 -1px 8px rgba(0, 0, 0, 0.06);
+
+  /* Nav */
+  --nav-height: 68px;
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+}
