@@ -1,0 +1,191 @@
+/* ===== Contacts Header ===== */
+.contacts-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-4) var(--space-2);
+}
+
+.contacts-page__title {
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+}
+
+.contacts-page__title-arrow {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  margin-left: 2px;
+}
+
+.contacts-page__actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.contacts-page__action-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+}
+
+/* ===== Search ===== */
+.contacts-page__search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-2) var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+}
+
+.contacts-page__search-icon {
+  font-size: var(--font-size-base);
+  color: var(--color-text-tertiary);
+}
+
+.contacts-page__search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: var(--font-size-md);
+  background: transparent;
+  color: var(--color-text-primary);
+}
+
+.contacts-page__search-input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+/* ===== Status Grid ===== */
+.contacts-page__status-section {
+  padding: var(--space-3) var(--space-4);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.contacts-page__status-grid {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* ===== Status Card ===== */
+.status-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100px;
+  padding: var(--space-2) 0;
+  position: relative;
+}
+
+.status-card__avatar-wrap {
+  position: relative;
+}
+
+.status-card__bubble {
+  position: absolute;
+  top: -6px;
+  right: -16px;
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-xs);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  white-space: nowrap;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-card__info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-card__name {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+}
+
+/* ===== Chat List ===== */
+.contacts-page__chat-list {
+  padding: 0 var(--space-4);
+}
+
+.contacts-page__empty {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--color-text-tertiary);
+}
+
+/* ===== Chat Row ===== */
+.chat-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.chat-row:last-child {
+  border-bottom: none;
+}
+
+.chat-row__left {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.chat-row__left .status-dot {
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chat-row__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.chat-row__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.chat-row__name {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+}
+
+.chat-row__time {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  flex-shrink: 0;
+}
+
+.chat-row__message {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
