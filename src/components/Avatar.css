@@ -1,0 +1,15 @@
+.avatar {
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.avatar--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0e0e0 0%, #c8c8cc 100%);
+  color: var(--color-text-tertiary);
+  font-weight: 600;
+  user-select: none;
+}
