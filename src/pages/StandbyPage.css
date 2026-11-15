@@ -1,0 +1,203 @@
+/* ===== Profile Section ===== */
+.standby-page__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-8) var(--space-4) var(--space-4);
+  text-align: center;
+}
+
+.standby-page__name {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-top: var(--space-3);
+}
+
+.standby-page__status {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+/* ===== Widget Grid ===== */
+.standby-page__widgets {
+  padding: var(--space-4);
+}
+
+.standby-page__widget-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+/* ===== Widget Card ===== */
+.widget-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  min-height: 120px;
+  display: flex;
+  align-items: stretch;
+}
+
+.widget-card--small {
+  grid-column: span 1;
+  min-height: 120px;
+}
+
+.widget-card--medium {
+  grid-column: span 1;
+  min-height: 160px;
+}
+
+.widget-card--large {
+  grid-column: span 2;
+  min-height: 140px;
+}
+
+/* ===== Widget: Image ===== */
+.widget-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.widget-image__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  color: var(--color-text-tertiary);
+  padding: var(--space-4);
+}
+
+.widget-image__placeholder span {
+  font-size: 36px;
+}
+
+.widget-image__placeholder p {
+  font-size: var(--font-size-xs);
+}
+
+/* ===== Widget: Todo ===== */
+.widget-todo {
+  padding: var(--space-3);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.widget-todo__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: var(--color-info);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.widget-todo__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.widget-todo__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+}
+
+.widget-todo__check {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-md);
+  flex-shrink: 0;
+}
+
+.widget-todo__check--done {
+  color: var(--color-primary);
+}
+
+.widget-todo__text {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===== Widget: Calendar ===== */
+.widget-calendar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--space-3);
+}
+
+.widget-calendar__date {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-text-primary);
+}
+
+.widget-calendar__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  margin-top: var(--space-1);
+}
+
+/* ===== Widget: Music ===== */
+.widget-music {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3);
+  text-align: center;
+}
+
+.widget-music__icon {
+  font-size: 28px;
+  margin-bottom: var(--space-1);
+}
+
+.widget-music__song {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.widget-music__artist {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+}
+
+/* ===== Widget: Text ===== */
+.widget-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
