@@ -1,0 +1,214 @@
+/* ===== Header ===== */
+.documents-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-4) var(--space-2);
+}
+
+.documents-page__title {
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+}
+
+.documents-page__title-arrow {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+}
+
+.documents-page__menu-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+}
+
+/* ===== Filters ===== */
+.documents-page__filters {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  overflow-x: auto;
+}
+
+.documents-page__filter-chip {
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.documents-page__filter-chip--active {
+  background: var(--color-text-primary);
+  color: var(--color-bg-card);
+  border-color: var(--color-text-primary);
+}
+
+/* ===== Grid ===== */
+.documents-page__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  padding: var(--space-4);
+}
+
+/* ===== Folder Card (仿 iOS 文件夹) ===== */
+.folder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0;
+}
+
+.folder-card__visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 0.82;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow-card);
+  overflow: visible;
+}
+
+.folder-card__tab {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  width: 40%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.folder-card__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-md);
+}
+
+.folder-card__icon {
+  font-size: 36px;
+}
+
+.folder-card__info {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.folder-card__name {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.folder-card__count {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+}
+
+/* ===== List ===== */
+.documents-page__list {
+  padding: 0 var(--space-4);
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.list-row:last-child {
+  border-bottom: none;
+}
+
+.list-row__icon {
+  font-size: 22px;
+  width: 32px;
+  text-align: center;
+}
+
+.list-row__name {
+  flex: 1;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+}
+
+.list-row__count {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+}
+
+.list-row__arrow {
+  font-size: var(--font-size-md);
+  color: var(--color-text-tertiary);
+}
+
+/* ===== Bottom Toolbar ===== */
+.documents-page__toolbar {
+  position: fixed;
+  bottom: calc(var(--nav-height) + var(--safe-area-bottom) + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 398px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.documents-page__view-switch {
+  display: flex;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.documents-page__view-btn {
+  padding: 8px 16px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  transition: all 0.15s ease;
+}
+
+.documents-page__view-btn--active {
+  background: var(--color-bg-card);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.documents-page__search-fab {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-elevated);
+  font-size: 20px;
+}
